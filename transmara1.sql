@@ -37,7 +37,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'ben', 'admin');
+(1, 'amos', 'admin');
+
 
 -- --------------------------------------------------------
 
@@ -177,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `news` (
 --
 
 INSERT INTO `news` (`id`, `county`, `source`, `message`, `time`) VALUES
-(1, 'Narok East', 'manager ben', 'Good, you will be paid this week all your pending money', 1579697660);
+(1, 'Narok East', 'manager Amos', 'Good, you will be paid this week all your pending money', 1579697660);
 
 -- --------------------------------------------------------
 

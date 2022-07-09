@@ -71,7 +71,7 @@
 		<nav>
 		<i class="fa fa-bars" style="float:left;margin:40px 10px 0px 20px;color:#008080;font-size:25px" onclick="sidebar('show')"></i>
 		<img src="images/logo.png" style="margin:10px 15px;height:80px;float:left">
-		<h3 style="line-height:100px">Transmara SPF</h3>
+		<h3 style="line-height:100px">Smart SPF</h3>
 		</nav>
 		<aside>
 			<div style="padding:10px;max-width:300px"><br>

@@ -382,7 +382,7 @@
 				$tmp_image=imagecreatetruecolor($new_width,$new_height);
 				imagecopyresampled($tmp_image,$newname,0,0,0,0,$new_width,$new_height,$width,$height);
 				if(imagejpeg($tmp_image,$save,100)){
-					if(mysqli_query($con,"UPDATE `agronomists` SET `photo`='$saven' WHERE `id`='$bid'")){
+					if(mysqli_query($con,"UPDATE `agronomists` SET `photo`='$save' WHERE `id`='$bid'")){
 						echo "success";
 						if($prof!="none"){ unlink("photos/$prof"); }
 					}

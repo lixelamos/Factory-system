@@ -26,13 +26,13 @@ include("dbcon.php");?>
 		<div class="main">
 			<div style="padding:20px"><br>
 			<center>
-				<p><img src="images/logo.png" height="100"></p><br>
-				<h3 style="color:#fff;text-shadow:0px 1px 1px #000">Transmara sugar Processing factory</h3><br>
+				<p><img src="images/logo.png" height="150"></p><br>
+				<h3 style="color:#fff;text-shadow:0px 1px 1px #000">Smart Farm Processing System</h3><br>
 				<table cellpadding="10" cellspacing="15px" style="width:100%;height:300px;text-align:center">
 				<tr><td onclick="navigate('manager/index.php')">Manager<br>Signin</td><td onclick="navigate('admin/index.php')">Admin<br>Signin</td></tr>
 				<tr><td onclick="navigate('login.php')">Agrnonomist<br>Signin</td><td onclick="navigate('login.php')">Farmer<br>Signin</td></tr>
 				</table><br>
-				<h4 style="color:#fff;text-shadow:0px 1px 1px #000">Copyright &copy; TSPF 2020</h4>
+				<h4 style="color:#fff;text-shadow:0px 1px 1px #000">Copyright &copy; SFPS2022</h4>
 			</center>
 			</div>
 		</div>

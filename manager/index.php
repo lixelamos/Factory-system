@@ -30,7 +30,7 @@
 			</form>
 			<p><button type="submit"id="sbtn"onclick="login()"style="outline:none"><i class="fa fa-caret-right"></i> LOGIN</button></p>
 			<br><br>
-			<p style="text-align:center">Copyright &copy; TSPF <?php echo date('Y'); ?></p><br>
+			<p style="text-align:center">Copyright &copy; SFPS <?php echo date('Y'); ?></p><br>
 			</div>
 		</div>
 	</body>

@@ -24,7 +24,7 @@
 	
 	$text="
 		<p style='text-align:center'><img src='../../../images/logo.png' height='70'></p>
-		<h1 style=\"font-family:rockwell;color:#2E8B57;text-align:center\">Transmara Sugar Processing Factory</h1>
+		<h1 style=\"font-family:rockwell;color:#2E8B57;text-align:center\"> Sugar Processing Factory</h1>
 		<h2 style='text-align:center;color:blue'>".ucwords($title)."</h2>
 	";
 	$mpdf->setFooter('<p style="text-align:center"> KFPC - '.ucwords($title).': Page {PAGENO}</p>');

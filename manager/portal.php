@@ -100,7 +100,7 @@
 		<section>
 			<div style="height:12%;width:100%;">
 				<img src="../images/logo.png"style="height:88%;margin:5px 20px;float:left"><br>
-				<h2 style="padding:10px;font-family:lucida calligraphy;font-size:19px;color:#2E8B57;">Transmara Sugar Processing Factory 
+				<h2 style="padding:10px;font-family:lucida calligraphy;font-size:19px;color:#2E8B57;">Smart Farm Processing System
 				<button style="float:right;background:#f08080"class="btn"onclick="window.location.replace('logout.php')"><i class="fa fa-power-off"></i> Logout</button></h2>
 			</div>
 			<div style="height:87%;overflow:auto;background:#fff;width:100%">

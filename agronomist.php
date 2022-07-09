@@ -17,7 +17,7 @@
 	<meta name="viewport"content="width=device-width,initial-scale=1.0,user-scalable=no,user-scalable=0">
 
 	<head>
-		<link rel="shortcut icon"href="images/favi.ico">
+		<link rel="shortcut icon"href="images/favi.icon">
 		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 		<script src="js/jquery.js"></script>
 		
@@ -81,7 +81,7 @@
 				while($row=mysqli_fetch_assoc($sql)){
 					$sen=trim($row['sender']);
 					$senda=explode("-",$sen)[1];
-					$sq=mysqli_query($con,"SELECT *FROM `chats` WHERE `sender`='$sen' AND `receiver`='$flow' AND `status`='0'");
+					$sqt=mysqli_query($con,"SELECT *FROM `chats` WHERE `sender`='$sen' AND `receiver`='$flow' AND `status`='0'");
 					$no=mysqli_num_rows($sq);
 					$sqt=mysqli_query($con,"SELECT *FROM `chats` WHERE (`sender`='$sen' AND `receiver`='$flow') OR (`sender`='$flow' AND `receiver`='$sen')");
 					$nu=mysqli_num_rows($sqt);

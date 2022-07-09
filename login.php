@@ -5,7 +5,7 @@
 	<meta name="viewport"content="width=device-width,initial-scale=1.0,user-scalable=no,user-scalable=0">
 
 	<head>
-		<link rel="shortcut icon"href="images/favi.ico">
+		<link rel="shortcut icon"href="images/favi.icon">
 		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/logn.css">
 		<script src="js/login.js"></script>
@@ -21,7 +21,7 @@
 
 	<body>
 		<div class="main" style="max-width:380px">
-		<center><img src="images/logo.png"height="100">
+		<center><img src="assets/images/logo.png>"height="100">
 		<p style="font-family:helvetica;font-size:16px;color:#191970;padding-top:5px">Agronomist & Farmer Login</p>
 		</center><br><br>
 			<div class="contents">
