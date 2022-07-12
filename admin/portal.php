@@ -121,7 +121,7 @@
 		
 						$data.="<tr valign='top'><td>$name</td><td>0$fon</td><td>$idno</td><td>$loc</td><td>$cond</td><td>$day</td></tr>";
 					}
-					echo "<br><h4 style='color:blue'>TSPF Farmers Account Creation request</h4>";
+					echo "<br><h4 style='color:blue'>SFPS Farmers Account Creation request</h4>";
 					echo ($data=="") ? "<p style='color:grey;line-height:50px'>No requests</p>":"<table cellpadding='10'style='border:1px solid #ccc;
 					border-collapse:collapse;width:100%' border='1'><tr style='font-weight:bold'><td>Name</td><td>Phone</td><td>ID No</td><td>County</td>
 					<td>Status</td><td>Registration</td></tr>$data</table><br>";
@@ -138,7 +138,7 @@
 					}
 					
 					echo "<br>
-					<h4 style='color:blue'>TSPF Produce demands from Farmers</h4>
+					<h4 style='color:blue'>SFPS Produce demands from Farmers</h4>
 					<table cellpadding='3'style='border:1px solid #ccc;float:right;border-collapse:collapse;text-align:center;width:100%'border='1'>
 					<caption><button class='btn'style='float:right;padding:4px'onclick=\"loadpage('addproduce')\"><i class='fa fa-plus'></i> produce</button></caption>
 					<tr style='font-weight:bold'><td>Produce</td><td>Measure</td><td>Price rate</td><td>Quantity demanded</td><td>Status</td></tr>$data</table><br>";

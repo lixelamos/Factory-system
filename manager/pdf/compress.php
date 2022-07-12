@@ -1,5 +1,5 @@
 <?php
-
+    header('HTTP/1.1 200 OK');
 $excl = array('HTML-CSS', 'DIRECTW', 'TABLES', 'IMAGES-CORE',
 	'IMAGES-BMP', 'IMAGES-WMF', 'TABLES-ADVANCED-BORDERS', 'COLUMNS', 'TOC', 'INDEX', 'BOOKMARKS', 'BARCODES', 'FORMS',
 	'WATERMARK', 'CJK-FONTS', 'INDIC', 'ANNOTATIONS', 'BACKGROUNDS', 'CSS-FLOAT', 'CSS-IMAGE-FLOAT', 'CSS-POSITION',
@@ -20,7 +20,7 @@ if (!isset($_POST['generate']) || $_POST['generate'] != 'generate') {
 		die("ERROR - Could not find mpdf_source.php file in current directory. Please rename mpdf.php as mpdf_source.php");
 	}
 
-	echo '<html>
+	'<html>
 <head>
 <script language=javascript>
 checked=false;
@@ -86,14 +86,6 @@ if (is_array($inc) && count($inc) > 0) {
 if (!defined('PHP_VERSION_ID')) {
 	$version = explode('.', PHP_VERSION);
 	define('PHP_VERSION_ID', ($version[0] * 10000 + $version[1] * 100 + $version[2]));
-}
-if (PHP_VERSION_ID < 50300) {
-	$mqr = @get_magic_quotes_runtime();
-} else {
-	$mqr = 0;
-}
-if ($mqr) {
-	set_magic_quotes_runtime(0);
 }
 
 $l = file('mpdf_source.php');

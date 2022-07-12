@@ -21,7 +21,7 @@
 
 	<body>
 		<div class="main" style="max-width:380px">
-		<center><img src="assets/images/logo.png>"height="100">
+		<center> <img src="assets/images/favi.png>"height="100">
 		<p style="font-family:helvetica;font-size:16px;color:#191970;padding-top:5px">Agronomist & Farmer Login</p>
 		</center><br><br>
 			<div class="contents">

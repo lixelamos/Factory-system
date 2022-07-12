@@ -1,6 +1,9 @@
 <?php
 	include "dbcon.php";
-	
+
+// Or using ini_set()
+ini_set('include_path', '/C:\xampp\htdocs\Factory system\chatsaver.php');
+
 	//delete chat
 	if(isset($_POST['dmssg'])){
 		$id=trim($_POST['dmssg']);
@@ -63,7 +66,7 @@
 				
 					$tmp_image=imagecreatetruecolor($new_width,$new_height);
 					imagecopyresampled($tmp_image,$newname,0,0,0,0,$new_width,$new_height,$width,$height);
-					if(imagejpeg($tmp_image,$save,100)){
+					if(imagejpeg($tmp_image,$filename="Chat-",100)){}{
 						$sql=mysqli_query($con,"INSERT INTO `chats` VALUES(id=(id+1),'$from','$to','$capt','$saven','0','$tm')");
 						if($sql){
 							echo 'success';

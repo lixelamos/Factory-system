@@ -1,11 +1,16 @@
 <?php
-	$con=mysqli_connect("localhost","amos","","transmara1");
+$host = "localhost"; 
+$user = "amos";
+$password = "admin";
+$database = "transmara1";
+	$con=mysqli_connect("localhost","amos","admin","transmara1");
 	if(!$con){
 		echo "Failed to connect to database";
+	
 	}
 	
 	function clean($data){
-		$con=mysqli_connect("localhost","amos","","transmara1");
+		$con=mysqli_connect("localhost","amos","admin","transmara1");
 		return htmlspecialchars(trim(htmlentities(mysqli_real_escape_string($con,addslashes($data))))); 
 	}
 		

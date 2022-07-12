@@ -82,7 +82,7 @@
 					$sen=trim($row['sender']);
 					$senda=explode("-",$sen)[1];
 					$sqt=mysqli_query($con,"SELECT *FROM `chats` WHERE `sender`='$sen' AND `receiver`='$flow' AND `status`='0'");
-					$no=mysqli_num_rows($sq);
+					$no=mysqli_num_rows($sql);
 					$sqt=mysqli_query($con,"SELECT *FROM `chats` WHERE (`sender`='$sen' AND `receiver`='$flow') OR (`sender`='$flow' AND `receiver`='$sen')");
 					$nu=mysqli_num_rows($sqt);
 					$cond=($nu==1) ? "1 Message":"$nu Messages";

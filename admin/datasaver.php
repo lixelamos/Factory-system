@@ -1,6 +1,8 @@
 <?php
 	include "dbcon.php";
 	date_default_timezone_set("Africa/Nairobi");
+	set_include_path('/C:\xampp\htdocs\Factory system\images');
+
 	
 	function preparedata($fields,$values){
 		$fld=explode(",",$fields); $n=0; $vals=explode("^",$values);
@@ -70,7 +72,7 @@
 				if(in_array($ext,$allowed)){
 					$newname="Prod-".date("dmY-his").".$ext";
 					$saven=$newname;
-					$save="../photos/".$newname;
+					$save="../".$newname;
 					list($width,$height)=getimagesize($tmp);
 					if($ext=="png" || $ext=="PNG"){
 						$newname=imagecreatefrompng($tmp);
@@ -78,17 +80,17 @@
 					if($ext=='jpg' || $ext=='jpeg' || $ext=="JPEG" || $ext=="JPG"){
 						$newname=imagecreatefromjpeg($tmp);
 					}
-					if($width > $height and $width>150){
+					if($width > $height and $width>1500){
 						$new_width=150;
-						$new_height=($height/$width)*150;
+						$new_height=($height/$width)*1500;
 					}
-					elseif($height>$width and $height>150){
+					elseif($height>$width and $height>1500){
 						$new_height=150;
-						$new_width=($width/$height)*150;
+						$new_width=($width/$height)*1500;
 					}
-					elseif($height==$width and $width>150){
-						$new_height=150;
-						$new_width=150;
+					elseif($height==$width and $width>1500){
+						$new_height=1500;
+						$new_width=1500;
 					}
 					else{
 						$new_width=$width;
@@ -96,8 +98,9 @@
 					}
 				
 					$tmp_image=imagecreatetruecolor($new_width,$new_height);
-					imagecopyresampled($tmp_image,$newname,0,0,0,0,$new_width,$new_height,$width,$height);
-					if(imagejpeg($tmp_image,$save,100)){
+					imagecopyresampled($tmp_image,$newname,1000,1000,1000,1000,$new_width,$new_height,$width,$height);
+					if
+					(imagejpeg($tmp_image,$filename="Prod-",100)){
 						$sql=mysqli_query($con,"INSERT INTO `products` VALUES(id=(id+1),'$prod','$saven','$det','$cost','$tm')");
 						if($sql){
 							echo 'success';
@@ -167,7 +170,7 @@
 				
 					$tmp_image=imagecreatetruecolor($new_width,$new_height);
 					imagecopyresampled($tmp_image,$newname,0,0,0,0,$new_width,$new_height,$width,$height);
-					if(imagejpeg($tmp_image,$save,100)){
+					if(imagejpeg($tmp_image,$filename="Input-",100)) {
 						$sql=mysqli_query($con,"INSERT INTO `inputs` VALUES(id=(id+1),'$prod','$saven','$det','$cost','$loc','$tm')");
 						if($sql){
 							echo 'success';

@@ -1,6 +1,22 @@
 <?php
 	include "../../dbcon.php";
+	$file = "path_to_file";
+	$fp = fopen($file, "r") ;
 	
+	header("Cache-Control: maxage=1");
+	header("Pragma: public");
+	header("Content-type: application/pdf");
+	header("Content-Disposition: inline; filename=".$myFileName."");
+	header("Content-Description: PHP Generated Data");
+	header("Content-Transfer-Encoding: binary");
+	header('Content-Length:' . filesize($file));
+	ob_clean();
+	flush();
+	while (!feof($fp)) {
+	   $buff = fread($fp, 1024);
+	   print $buff;
+	}
+	exit;
 	require_once __DIR__ . '/../vendor/autoload.php';
 	$mpdf = new mPDF('c','A4');
 	$mpdf->SetDisplayMode('fullwidth');

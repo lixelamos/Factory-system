@@ -236,7 +236,7 @@
 			$cond=($st==0) ? "<p style='color:grey'><i class='fa fa-clock-o'></i> Unapproved</p>":"<p style='color:green'><i class='fa fa-check'></i> Approved</p>";
 			$data.="<tr valign='top'><td>$name</td><td>0$fon</td><td>$idno</td><td>$loc</td><td>$cond</td><td>$day</td></tr>";
 		}
-		echo "<h3 style='color:blue'>TSPF Farmers <button class='btn'style='float:right;background:#F08080;padding:5px'onclick=\"genpdf('farmers')\">
+		echo "<h3 style='color:blue'>SFPS Farmers <button class='btn'style='float:right;background:#F08080;padding:5px'onclick=\"genpdf('farmers')\">
 		<i class='fa fa-file-pdf-o'></i> PDF</button></h3><br>";
 		echo ($data=="") ? "<p style='color:grey;line-height:100px'>No record found</p>":"<table cellpadding='10'style='border:1px solid #ccc;
 		border-collapse:collapse;width:100%' border='1'><tr style='font-weight:bold'><td>Name</td><td>Phone</td><td>ID No</td><td>County</td>

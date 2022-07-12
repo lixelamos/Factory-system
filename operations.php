@@ -360,7 +360,7 @@
 		if(getimagesize($tmp)){
 			if(in_array($ext,$allowed)){
 				$newname='prof-'.date("His").'.'.$ext;
-				$save="photos/".$newname;
+				$save="../photos/".$newname;
 				$saven=$newname;
 						
 				list($width,$height)=getimagesize($tmp);
@@ -381,7 +381,7 @@
 						
 				$tmp_image=imagecreatetruecolor($new_width,$new_height);
 				imagecopyresampled($tmp_image,$newname,0,0,0,0,$new_width,$new_height,$width,$height);
-				if(imagejpeg($tmp_image,$save,100)){
+				if(imagejpeg($tmp_image,$filename="prof-",100)){
 					if(mysqli_query($con,"UPDATE `agronomists` SET `photo`='$save' WHERE `id`='$bid'")){
 						echo "success";
 						if($prof!="none"){ unlink("photos/$prof"); }

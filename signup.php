@@ -53,7 +53,7 @@
 		<div class="wrap"></div><div class="prog"></div>
 		<div class="main">
 		<center><img src="assets/images/logo.png>"style="margin-top:10px;height:80px;"></center>
-		<p style="font-family:rockwell;color:#191970;text-align:center;font-size:18px">TSPF Farmer Signup</p><br>
+		<p style="font-family:rockwell;color:#191970;text-align:center;font-size:18px">SFPS Farmer Signup</p><br>
 			<div style="padding:20px;font-family:tahoma;color:#191970">
 			<form method="post" id="fom" onsubmit="save(event)">
 			<p><input type="text"name="fname"placeholder="&#xf007 Full name"autocomplete="off"maxlength="20"autofocus required></p><br>
